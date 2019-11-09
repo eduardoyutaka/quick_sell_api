@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 2019_11_09_215844) do
   create_table "purchases", force: :cascade do |t|
     t.integer "customer_age"
     t.string "customer_gender"
-    t.decimal "product_price", precision: 8, scale: 2
     t.string "product_name"
+    t.decimal "product_price", precision: 8, scale: 2
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
